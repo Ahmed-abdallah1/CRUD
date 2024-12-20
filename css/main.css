@@ -1,0 +1,645 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    width: 100%;
+    text-align: center;
+}
+.home h1{
+    position: relative;
+    margin-top: 30px;
+    color: rgb(56, 54, 54);;
+}
+.home h1::before{
+    position: absolute;
+    content: "";
+    width: 90px;
+    top: 55px;
+    left: 47%;
+    height: 3px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 20%;
+}
+.home .caption{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(128, 122, 122);
+    margin-top: 40px;
+    padding-top: 20px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+.home .caption .row{
+    width: 95%;
+    margin: auto;
+    background-color: rgb(56, 54, 54);
+    padding-top: 15px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+.home .caption .row .title{
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    border-radius: 30px;
+}
+.home .caption .row .title input{
+    width: 90%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.calc{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.calc input{
+    width: 18%;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+.h2-price{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.count{
+    width: 100%;
+}
+.count input{
+    width: 90%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+}
+.department{
+    width: 100%;
+}
+.department select{
+    width: 90%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 10px;
+}
+.department select option{
+    padding: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+.sentdata{
+    width: 90%;
+    margin: auto;
+}
+.sentdata button{
+    background-color: blue;
+    width: 100%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+}
+.sentdata button:hover{
+    background-color: rgba(0, 0, 255,0.5);
+}
+.list{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    color: rgb(56, 54, 54);
+}
+.list::before{
+    position: absolute;
+    content: "";
+    width: 90px;
+    bottom: -20px;
+    left: 47%;
+    height: 3px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 20%;
+}
+.result{
+    width: 100%;
+    margin-top: 40px;
+}
+.result .home-result{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(128, 122, 122);
+    padding: 20px 0px;
+    border-radius: 15px;
+}
+.result .home-result .row-result{
+    width: 98%;
+    margin: auto;
+   background-color:rgb(56, 54, 54) ;
+   padding: 10px 0px;
+   border-radius: 15px;
+}
+.result .home-result .row-result .contant{
+    width: 97%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+table{
+    width: 100%;
+}
+table td{
+    padding: 5px 25px;
+}
+table tr td{
+    border-bottom: 0.5px solid rgb(238, 238, 238);
+    border-radius: 3px;
+}
+.row-result{
+text-align: center;
+}
+.clear-btn{
+    background-color: red;
+    width: 95%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.none{
+    display: none;
+}
+
+.fa-trash{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-pen-to-square{
+    color: yellow;
+    font-size: 20px;
+    cursor: pointer;
+}
+.yellowbutton{
+    background-color: yellow !important;
+    width: 100%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black !important;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home h1{
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    .home h1::before{
+        width: 60px;
+        top: 45px;
+        left: 42%;
+        height: 3px;
+        border-radius: 50%;
+    }
+    .home .caption{
+        width: 98%;
+        padding: 10px 0px;
+    }
+    .home .caption .row{
+        width: 98%;
+    }
+    .home .caption .row .title{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .home .caption .row .title input{
+        width: 85%;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+    .calc{
+        width: 98%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .calc input{
+        width: 25%;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .h2-price{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color:rgb(184, 184, 195);
+    }
+    .department h2{
+        font-size: 20px;
+        color:rgb(184, 184, 195);
+    }
+    .count input{
+        width: 85%;
+        padding: 5px 10px;
+    }
+    .department select{
+        width: 90%;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        margin-top: 10px;
+    }
+    .department select option{
+        padding: 0px;
+        font-size: 12px;
+    }
+    .sentdata{
+        width: 95%;
+        margin: auto;
+    }
+    .sentdata button{
+        width: 95%;
+        margin-top: 20px;
+    }
+    .list{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .list::before{
+        width: 60px;
+        top: 52px;
+        left: 42%;
+        height: 3px;
+        border-radius: 50%;
+    }
+    .result .home-result{
+        width: max-content;
+        margin: auto;
+        position: relative;
+        z-index: 256560;
+        overflow-x: scroll;
+        background-color: rgb(128, 122, 122);
+        padding: 10px 0px;
+        border-radius: 15px;
+    }
+    .result .home-result .row-result{
+       width: auto;
+       padding: 10px 10px;
+       border-radius: 15px;
+       position: relative;
+       z-index: 256560;
+       overflow-x: scroll;
+    }
+    .result .home-result .row-result .contant{
+        width: auto;
+        padding: 5px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        z-index: 256560;
+        overflow-x: scroll;
+    }
+    table{
+        width: auto;
+        position: relative;
+        z-index: 256560;
+        overflow-x: hidden;
+    }
+    table td{
+        padding: 10px 15px;
+    }
+    table tr td{
+        border-bottom: 0.5px solid rgb(238, 238, 238);
+        border-radius: 3px;
+        
+    }
+    .row-result{
+    text-align: center;
+    }
+    .clear-btn{
+        background-color: red;
+        width: 95%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+    }
+    .none{
+        display: none;
+    }
+    
+    .fa-trash{
+        color: red;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-pen-to-square{
+        color: yellow;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .yellowbutton{
+        background-color: yellow !important;
+        width: 100%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        color: black !important;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    .home h1::before{
+        left: 45%;
+        border-radius: 50%;
+    }
+    .home .caption{
+        width: 95%;
+    }
+    .home .caption .row{
+        width: 95%;
+    }
+    .home .caption .row .title{
+        width: 100%;
+    }
+    .home .caption .row .title input{
+        width: 90%;
+    }
+    .calc{
+        width: 95%;
+    }
+    .list::before{
+        left: 45%;
+        border-radius: 50%;
+    }
+    .result{
+        width: 100%;
+    }
+    .result .home-result{
+        width: 98%;
+        padding: 10px 0px;
+    }
+    .result .home-result .row-result{
+        width: 98%;
+       padding: 5px 0px;
+    }
+    .result .home-result .row-result .contant{
+        width: 97%;
+    }
+    table{
+        width: 100%;
+    }
+    table td{
+        padding: 5px 15px;
+    }
+    
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    .home{
+        width: 100%;
+        text-align: center;
+    }
+    .home h1{
+        position: relative;
+        margin-top: 30px;
+        color: rgb(56, 54, 54);;
+    }
+    .home h1::before{
+        position: absolute;
+        content: "";
+        width: 90px;
+        top: 55px;
+        left: 47%;
+        height: 3px;
+        background-color: rgb(56, 54, 54);
+        border-radius: 20%;
+    }
+    .home .caption{
+        width: 60%;
+        margin: auto;
+        background-color: rgb(128, 122, 122);
+        margin-top: 40px;
+        padding-top: 20px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+    }
+    .home .caption .row{
+        width: 95%;
+        margin: auto;
+        background-color: rgb(56, 54, 54);
+        padding-top: 15px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+    }
+    .home .caption .row .title{
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+        border-radius: 30px;
+    }
+    .home .caption .row .title input{
+        width: 90%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+    }
+    .calc{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .calc input{
+        width: 18%;
+        padding: 8px 0px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .h2-price{
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .count{
+        width: 100%;
+    }
+    .count input{
+        width: 90%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        margin-top: 10px;
+        margin-bottom: 10PX;
+    }
+    .department{
+        width: 100%;
+    }
+    .department select{
+        width: 90%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .department select option{
+        padding: 5px;
+        font-size: 15px;
+        text-align: left;
+    }
+    .sentdata{
+        width: 90%;
+        margin: auto;
+    }
+    .sentdata button{
+        background-color: blue;
+        width: 100%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        color: white;
+    }
+    .sentdata button:hover{
+        background-color: rgba(0, 0, 255,0.5);
+    }
+    .list{
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        color: rgb(56, 54, 54);
+    }
+    .list::before{
+        position: absolute;
+        content: "";
+        width: 90px;
+        bottom: -20px;
+        left: 47%;
+        height: 3px;
+        background-color: rgb(56, 54, 54);
+        border-radius: 20%;
+    }
+    .result{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .result .home-result{
+        width: 70%;
+        margin: auto;
+        background-color: rgb(128, 122, 122);
+        padding: 20px 0px;
+        border-radius: 15px;
+    }
+    .result .home-result .row-result{
+        width: 98%;
+        margin: auto;
+       background-color:rgb(56, 54, 54) ;
+       padding: 10px 0px;
+       border-radius: 15px;
+    }
+    .result .home-result .row-result .contant{
+        width: 97%;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    table{
+        width: 100%;
+    }
+    table td{
+        padding: 5px 25px;
+    }
+    table tr td{
+        border-bottom: 0.5px solid rgb(238, 238, 238);
+        border-radius: 3px;
+    }
+    .row-result{
+    text-align: center;
+    }
+    .clear-btn{
+        background-color: red;
+        width: 95%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+    }
+    .none{
+        display: none;
+    }
+    
+    .fa-trash{
+        color: red;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-pen-to-square{
+        color: yellow;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .yellowbutton{
+        background-color: yellow !important;
+        width: 100%;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        color: black !important;
+    }
+}
